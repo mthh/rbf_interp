@@ -1,4 +1,5 @@
 # rbf_interp
+[![Build Status](https://travis-ci.org/mthh/rbf_interp.svg?branch=master)](https://travis-ci.org/mthh/rbf_interp)
 
 Rust library for *Radial Basis Function Interpolation*.
 
@@ -9,7 +10,8 @@ let obs_pts = vec![Pt::new(0.0, 0.0, 0.0),
                    Pt::new(75.0, 25.0, 3.1),
                    Pt::new(100.0, 75.0, 7.4)];
 let rbf = Rbf::new(&obs_pts, "linear", None);
-let interpolated_value = rbf.interp_point((0.0, 50.0)), 0.0000001));
+// Compute the value at point (0.0, 50.0) :
+let interpolated_value = rbf.interp_point((0.0, 50.0)), 0.0000001);
 ```
 
 **Want to interpolate from a set of known points on a regular grid:**
