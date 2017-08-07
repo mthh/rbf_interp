@@ -1,0 +1,12 @@
+[package]
+name = "rbf_interp"
+version = "0.1.0"
+authors = ["mthh <matthieu.viry@cnrs.fr>"]
+
+[dependencies]
+num-traits = "0.1.39"
+rulinalg = "^0.4"
+error-chain = "0.10"
+
+[dev-dependencies]
+gnuplot = "0.0.22"
