@@ -11,7 +11,7 @@ let obs_pts = vec![Pt::new(0.0, 0.0, 0.0),
                    Pt::new(100.0, 75.0, 7.4)];
 let rbf = Rbf::new(&obs_pts, "linear", None);
 // Compute the value at point (0.0, 50.0) :
-let interpolated_value = rbf.interp_point((0.0, 50.0)), 0.0000001);
+let interpolated_value = rbf.interp_point((0.0, 50.0));
 ```
 
 **Want to interpolate from a set of known points on a regular grid:**
